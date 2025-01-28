@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirzapur Wikipedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: url('https://images.moneycontrol.com/static-mcnews/2024/10/20241028044642_mirzapurthefilm.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+            color: #f4c430; 
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #f4c430;
+            color: black;
+        }
+
+        h1, h2, h3 {
+            color: #f4c430;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 10px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        #imageModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        #imageModal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mirzapur Wikipedia</h1>
+        <nav>
+            <a href="#season1">Season 1</a>
+            <a href="#season2">Season 2</a>
+            <a href="#season3">Season 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="season1">Season 1 Plot (2018)</h1>
+        <img width="300px" src="https://images.moneycontrol.com/static-mcnews/2024/10/20241028044642_mirzapurthefilm.jpg?impolicy=website&width=770&height=431" alt="mirzapur logo">
+        <p>The story centers around Kaleen Bhaiya...</p>
+
+        <h2 id="season2">Season 2 Plot (2020)</h2>
+        <img width="300px" src="https://static.india.com/wp-content/uploads/2020/10/mirzapur-2-twitter-review.jpg?impolicy=Medium_Resize&w=1200&h=800" alt="Season 2 image">
+        <p>The second season focuses on Guddu Pandit seeking revenge...</p>
+
+        <h3 id="season3">Season 3 Plot (2024)</h3>
+        <img width="300px" src="https://m.media-amazon.com/images/S/pv-target-images/855e8bb647c4a3ccfcdceb8d8d354ffc1df41908b203322b96c6683a0a070f0a._SX1080_FMjpg_.jpg" alt="Season 3 image">
+        <p>"Mirzapur" Season 3 continues the intense saga...</p>
+    </main>
+
+    <div id="imageModal">
+        <span id="closeModal">&times;</span>
+        <img id="modalImage" src="" alt="Expanded view">
+    </div>
+</body>
+</html>
